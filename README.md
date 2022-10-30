@@ -13,6 +13,11 @@ Developed by Mark Breznik and Blaž Pridgar for a course in our gradute study pr
 
 ## Features
 
+![DebtSettler Login Screen](https://user-images.githubusercontent.com/72226231/198884889-2262aa79-2182-4026-8ae8-540b91423f28.png)
+![DebtSettler Home Screen](https://user-images.githubusercontent.com/72226231/198884888-c9871a9f-de1a-4251-a7da-b3edf7631458.png)
+![DebtSettler HouseHold Screen](https://user-images.githubusercontent.com/72226231/198884886-fb48aa43-4578-4481-8953-aacb6947b767.png)
+![DebtSettler Purchase History](https://user-images.githubusercontent.com/72226231/198884885-72219f55-df1e-4d09-a4ab-a0ff98d85f60.png)
+
 - Track household purchases with a flick of your finger
 - Figure out who owes who what
 - Share a cloud-synced shopping list with your housemates
