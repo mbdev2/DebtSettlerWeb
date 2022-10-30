@@ -1,7 +1,7 @@
 version: "3.6"
 
 services:
-  node-api:
+  node-web:
     container_name: debtsettler-web
     restart: always
     ports:
@@ -19,6 +19,6 @@ services:
     networks:
       - debtsettler-web-network
 networks:
-  debtsettler-network:
+  debtsettler-web-network:
     name: debtsettler-web-network
     driver: bridge
