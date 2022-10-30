@@ -1,0 +1,43 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.heading {
+  font-size: $fs-heading;
+  font-weight: $fw-light;
+  margin-block-end: (30/16) * 1rem;
+  color: $color-accent-light;
+
+  span {
+    font-size: $fs-sub-heading;
+    font-weight: $fw-regular;
+    color: $color-primary;
+    display: block;
+  }
+}
+
+.buttonSpace {
+  display: flex;
+  // gap: clamp((8/16) * 1rem, 2vw, (12/16) * 1rem);
+  gap: clamp((8/16) * 1rem, 2vw, (12/16) * 1rem);
+
+  margin-block-start: (32/16) * 1rem;
+}
+
+.btnSolid {
+  @extend .btnSolid;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding-inline: (12/16) * 1em;
+}
+
+.btnLight {
+  @extend .btnLight;
+  flex-shrink: 0;
+  padding-inline: (12/16) * 1em;
+}
+
+.householdList {
+  max-height: 245px;
+  overflow-y: scroll;
+  padding-inline-end: 0.55rem;
+}

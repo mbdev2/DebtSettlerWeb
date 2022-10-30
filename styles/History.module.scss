@@ -1,0 +1,29 @@
+@import "_variables.scss";
+
+.contentContainer {
+  flex-grow: 1;
+}
+.heading {
+  font-size: $fs-heading;
+  font-weight: $fw-medium;
+  margin-block-end: 2.5rem;
+}
+.historyList {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-inline-end: 0.55rem;
+}
+
+.monthYearHeading {
+  color: $color-accent-light;
+  font-weight: $fw-light;
+  font-size: $fs-body;
+  border-bottom: 1px solid $color-vertical-line;
+  padding-block: 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+.monthYearContainer {
+}

@@ -1,0 +1,86 @@
+@import "_variables.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: (12/16) * 1em (12/16) * 1em;
+  border-radius: 0.5rem;
+  margin-inline-end: 0.6rem;
+  cursor: pointer;
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.03);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $color-vertical-line;
+  }
+
+  &.selected {
+    div h2 {
+      text-decoration: line-through;
+    }
+    .icon {
+      color: $color-green;
+    }
+  }
+
+  @media (hover: none) {
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+.additionalPadding {
+  padding: (16/16) * 1em (12/16) * 1em;
+}
+
+.item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: $fs-list-heading;
+  font-weight: $fw-regular;
+  color: $color-regular;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-inline-end: 0.5rem;
+}
+.description {
+  font-size: $fs-body;
+  font-weight: $fw-regular;
+  color: $color-light-mid;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: $color-super-light;
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.penIcon {
+  font-size: 1.2rem;
+  color: $color-super-light;
+  &:hover {
+    color: #3c91e6;
+  }
+}
+.trashIcon {
+  font-size: 1.2rem;
+  color: $color-super-light;
+  &:hover {
+    color: $color-red;
+  }
+}

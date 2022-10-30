@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+.contentContainer {
+  flex-grow: 1;
+}
+
+.heading {
+  font-size: $fs-heading;
+  font-weight: $fw-medium;
+  margin-block-end: 2.5rem;
+  padding-inline-start: 0.5rem;
+}
+
+.balanceList {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding-inline-end: 0.55rem;
+}

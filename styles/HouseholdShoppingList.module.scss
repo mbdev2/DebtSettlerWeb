@@ -1,0 +1,53 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.contentContainer {
+  flex-grow: 1;
+}
+
+.heading {
+  font-size: $fs-heading;
+  font-weight: $fw-medium;
+  margin-block-end: 1.5rem;
+}
+
+.addItem {
+  position: relative;
+  margin-block-end: 1rem;
+}
+.addIcon {
+  padding: 0;
+  background: none;
+  color: $color-light-mid;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.shoppingList {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-block-start: 1rem;
+}
+
+.buttonSpace {
+  display: flex;
+  // gap: clamp((8/16) * 1rem, 2vw, (12/16) * 1rem);
+  gap: (12/16) * 1em;
+  margin-block-start: 1rem;
+}
+
+.btnSolid {
+  @extend .btnSolid;
+  //flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.btnLight {
+  @extend .btnLight;
+  flex-shrink: 0;
+  //flex-grow: 1;
+}

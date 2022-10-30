@@ -1,0 +1,27 @@
+//Colors
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+
+$color-primary: hsla(0, 0%, 0%, 1);
+$color-super-light: hsla(0, 0%, 0%, 0.2); //300
+$color-light: hsla(0, 0%, 0%, 0.4); //300
+$color-light-mid: hsla(0, 0%, 0%, 0.6); //300
+$color-accent-light: hsla(0, 0%, 0%, 0.55);
+$color-regular: hsla(0, 0%, 0%, 0.8); //control icons
+$color-vertical-line: hsla(0, 0%, 0%, 0.3);
+$color-super-light-vertical-line: hsla(0, 0%, 0%, 0.1);
+
+$color-green: hsl(173, 47%, 59%);
+$color-green-light: hsla(173, 47%, 59%, 0.769);
+$color-red: hsl(0, 92%, 64%);
+
+$fs-heading: (28/16) * 1rem;
+$fs-login-heading: (30/16) * 1rem;
+$fs-body: 1rem;
+$fs-household-heading: (26/16) * 1rem;
+$fs-sub-heading: (24/16) * 1rem;
+// $fs-buttons: (18/16) * 1rem; //buttons
+$fs-buttons: clamp((16/16) * 1rem, 4.2vw, (18/16) * 1rem); //buttons
+$fs-list-heading: (20/16) * 1rem;

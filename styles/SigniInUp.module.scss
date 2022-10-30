@@ -1,0 +1,62 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: (12/16) * 1rem;
+
+  p {
+    color: $color-red;
+    margin-block-start: 0.25rem;
+  }
+}
+
+.heading {
+  font-size: $fs-login-heading;
+  font-weight: $fw-medium;
+  margin-bottom: (34/16) * 1rem;
+
+  //Registration variation
+  &.reg {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 400) {
+    font-size: $fs-heading;
+  }
+}
+
+.member {
+  font-weight: $fw-regular;
+  color: $color-accent-light;
+  text-align: center;
+
+  //Registration variation
+
+  &.reg {
+    margin-bottom: (34/16) * 1rem;
+    text-align: start;
+  }
+
+  span {
+    font-weight: $fw-medium;
+    color: $color-regular;
+  }
+}
+
+.btnSolid {
+  margin-block: (24/16) * 1rem (12/16) * 1rem;
+  @extend .btnSolid;
+}
+
+.password {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $color-regular; 
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  width: min(100%, 1000px);
+  min-height: 640px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 7rem 7rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    min-height: 100vh;
+    border-radius: 0;
+    padding-block: 8rem 8rem;
+  }
+}

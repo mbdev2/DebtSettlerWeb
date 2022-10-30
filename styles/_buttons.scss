@@ -1,0 +1,27 @@
+@import "_variables.scss";
+
+.btn {
+  line-height: 1.4;
+  font-weight: $fw-medium;
+  font-size: $fs-buttons;
+  border: 1px solid $color-primary;
+  border-radius: 0.5rem;
+  padding: (12/16) * 1rem (24/16) * 1rem;
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+}
+
+.btnSolid {
+  @extend .btn;
+  color: white;
+  background-color: $color-primary;
+}
+
+.btnLight {
+  @extend .btn;
+  color: $color-primary;
+  background-color: white;
+}

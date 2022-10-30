@@ -1,0 +1,58 @@
+@import "_variables.scss";
+
+.container {
+  //position: relative;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.vertical_line {
+  display: inline-block;
+  border-left: 1px solid $color-vertical-line;
+  height: 450px;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  // left: 2.5rem;
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    // width: min(90%, 360px);
+    width: 80%;
+  }
+
+  .vertical_line {
+    display: none;
+  }
+
+  .houseLogo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+}
+
+@media only screen and (max-height: 650px) and (max-width: 700px) {
+  .container {
+    // width: min(90%, 360px);
+  }
+}
+
+.contentContainer {
+  // display: flex;
+  // flex-direction: column;
+  flex-grow: 1;
+  min-width: min(100%, 360px);
+  // outline: 0.5px rgb(221, 221, 221) solid;
+}

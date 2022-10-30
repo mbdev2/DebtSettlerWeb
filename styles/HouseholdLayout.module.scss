@@ -1,0 +1,122 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.container {
+  //position: relative;
+  width: 85%;
+  height: 100%;
+  // display: grid;
+  // grid-template-columns: auto auto 1fr;
+  // align-items: center;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  gap: 4rem;
+  //margin-top: 5rem;
+}
+
+.actionSection {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.householdMain {
+  max-width: 30ch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.householdInfo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+.heading {
+  font-size: $fs-household-heading;
+  font-weight: $fw-medium;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-light;
+  font-size: $fs-sub-heading;
+  font-weight: $fw-medium;
+  &:hover {
+    color: $color-accent-light;
+  }
+}
+.householdAvatar {
+  cursor: pointer;
+  font-size: 2.8rem;
+  .householdIcon {
+    color: white;
+  }
+}
+.gear:hover {
+  color: $color-primary;
+  cursor: pointer;
+}
+.vertical_line {
+  display: inline-block;
+  border-left: 1px solid $color-vertical-line;
+  height: 450px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  padding-block-start: 1rem;
+  border-top: 1px solid $color-vertical-line;
+}
+
+.actionIconContainer {
+  width: 4.2rem;
+  font-size: 2.2rem;
+  color: $color-primary;
+  cursor: pointer;
+  .actionIcon {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .vertical_line {
+    display: none;
+  }
+  .householdMain {
+    max-width: unset;
+    //flex-wrap: nowrap;
+  }
+  .householdAvatar {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+  .container {
+    // margin-block-start: 8rem;
+  }
+}
+
+@media only screen and (max-height: 650px) and (max-width: 700px) {
+  .container {
+    // width: min(90%, 360px);
+  }
+}

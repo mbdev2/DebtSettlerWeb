@@ -1,0 +1,223 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+.container {
+  //position: relative;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3rem;
+  //margin-top: 5rem;
+}
+
+.vertical_line {
+  display: inline-block;
+  border-left: 1px solid $color-vertical-line;
+  height: 450px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    // width: min(90%, 360px);
+    width: 80%;
+  }
+
+  .vertical_line {
+    display: none;
+  }
+}
+
+.contentContainer {
+  // display: flex;
+  // flex-direction: column;
+  flex-grow: 1;
+  min-width: min(100%, 360px);
+  // outline: 0.5px rgb(221, 221, 221) solid;
+}
+
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 0.8rem;
+
+  button {
+    font-size: clamp(0.5rem, 4.5vw, 1rem);
+    font-weight: $fw-medium;
+    color: $color-regular;
+    text-decoration: underline;
+  }
+}
+
+.avatar {
+  font-size: 4rem;
+  font-size: clamp(2rem, 15vw, 3.5rem);
+}
+.avatarIcon {
+  font-size: 5rem;
+  font-size: clamp(2rem, 18vw, 4.5rem);
+  color: white;
+}
+
+.infoSection {
+  width: 100%;
+}
+.passworChangeSection {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: (12/16) * 1rem;
+
+  p {
+    color: $color-red;
+    margin-block-start: 0.25rem;
+  }
+  label {
+    display: inline-block;
+    font-weight: $fw-medium;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.heading {
+  font-size: $fs-login-heading;
+  font-weight: $fw-medium;
+  margin-bottom: (34/16) * 1rem;
+
+  //Registration variation
+  &.reg {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: $fs-heading;
+  }
+}
+
+.member {
+  font-weight: $fw-regular;
+  color: $color-accent-light;
+  text-align: center;
+
+  //Registration variation
+
+  &.reg {
+    margin-bottom: (34/16) * 1rem;
+    text-align: start;
+  }
+
+  span {
+    font-weight: $fw-medium;
+    color: $color-regular;
+  }
+}
+
+.btnSolid {
+  margin-block: (24/16) * 1rem (12/16) * 1rem;
+  @extend .btnSolid;
+}
+
+.password {
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 2.8rem;
+    right: 1rem;
+    color: $color-regular;
+  }
+}
+.subHeading {
+  font-size: $fs-sub-heading;
+  font-weight: $fw-medium;
+  text-align: center;
+}
+.backdrop {
+  position: fixed;
+  background: $color-super-light;
+  inset: 0px;
+}
+.modalWrapper {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.anotherWrapper {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+}
+.modal {
+  position: relative;
+  z-index: 100;
+  width: min(420px, 85%);
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+
+  .btnSolid {
+    margin: 0;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+.pickColorSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+
+  .avatar {
+    //font-size: 4.8rem;
+    font-size: clamp(2rem, 20vw, 6rem);
+  }
+  .avatarIcon {
+    //font-size: 5.8rem;
+    font-size: clamp(1rem, 16vw, 5rem);
+  }
+}
+
+// .colorContainer {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0.5rem;
+//   input {
+//     padding: 0.5rem;
+//     // @media only screen and (min-width: 500px) {
+//     //   width: 150px;
+//     // }
+//   }
+// }
+.closeModalButton {
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  color: black;
+  font-size: 1.5rem;
+  background-color: white;
+  color: $color-light-mid;
+  &:hover {
+    color: black;
+  }
+}
+
+.restrictedInput {
+  opacity: 0.5;
+}

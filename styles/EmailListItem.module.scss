@@ -1,0 +1,25 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.emailItem {
+  p {
+    color: $color-light-mid;
+    margin: 0;
+  }
+  font-size: $fs-buttons;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em;
+  padding-inline: 1em;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.03);
+  }
+}
+
+.icon {
+  color: $color-red;
+  cursor: pointer;
+}

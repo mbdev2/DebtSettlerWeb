@@ -1,0 +1,67 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-light;
+  // font-size: $fs-sub-heading;
+  // font-weight: $fw-medium;
+  &:hover {
+    color: $color-accent-light;
+  }
+
+  span {
+    font-size: $fs-sub-heading;
+    font-weight: $fw-medium;
+  }
+}
+.gear {
+  padding: 0;
+  color: $color-light;
+  font-size: $fs-sub-heading;
+  font-weight: $fw-medium;
+  &:hover {
+    color: $color-light-mid;
+    cursor: pointer;
+  }
+}
+.menuContent {
+  color: $color-light-mid;
+  background-color: white;
+  border: 0.5px solid hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem (24/16) * 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.contentItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-block-end: 0.5rem;
+  cursor: pointer;
+}
+.menuItemActive {
+  // outline: none;
+  color: black;
+}
+
+.separator {
+  background-color: $color-super-light;
+  height: 1px;
+  margin-block: 0.5rem;
+}
+
+.logout {
+  color: hsla(0, 65%, 68%, 1);
+  margin-bottom: 0;
+}
+.logoutActive {
+  // outline: none;
+  color: $color-red;
+}
