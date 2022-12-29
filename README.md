@@ -4,7 +4,7 @@
 
 This repo contains the React WEB APP portion of our project. We also created an universal mobile app and a REST API.
 
-Flutter Mobile APP: TBD
+Flutter Mobile APP: https://github.com/mbdev2/DebtSettlerApp
 
 REST API: https://github.com/mbdev2/DebtSettlerServer
 
